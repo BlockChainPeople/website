@@ -604,13 +604,55 @@ html body {
     width: 100%;
     height: 35px;
     background: url("../image/line_icon.png") 0 0/auto 100%;
-    margin: 100px 0 200px;
+    margin: 100px 0 50px;
 }
 
 .footer .right_img {
     width: 95%;
     display: block;
     margin: auto;
+}
+
+.footer .link_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer .link_icon .other_icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .link_icon .other_icon img{
+    max-width: 60px;
+}
+.footer .link_icon a img {
+    display: block;
+}
+
+.footer .footer_txt .txt {
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    font-size: 16px;
+    margin: auto;
+    line-height: 2;
+}
+
+.footer .footer_txt .copy_right {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #414141;
+    padding: 20px 0;
+    font-size: 16px;
+    color: #fff;
 }
 
 
