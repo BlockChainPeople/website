@@ -30,9 +30,14 @@ html {
     }
 }
 
+@font-face {
+    font-family: csms;
+    src: url("../font/ComicSansMS.ttf");
+}
+
 html body {
     background-color: transparent;
-    font-family: Tensentype ZhiHeiJ-W6;
+    font-family: csms;
     position: relative;
     line-height: 1.5;
     padding-top: 200px;
@@ -74,7 +79,7 @@ html body {
 }
 
 .header .navbar-brand {
-    margin-right: 100px;
+    margin-right: 50px;
     width: 100px;
 }
 
@@ -115,8 +120,8 @@ html body {
 }
 
 .nav_list li a {
-    margin-right: 40px;
-    color: #fff;
+    margin-right: 25px;
+    color: #fff!important;
     font-size: 18px;
 }
 
@@ -284,6 +289,9 @@ html body {
     font-weight: bold;
     letter-spacing: 5px;
     line-height: 1.2;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .ecosystem .top .title .title_2 span {
@@ -309,10 +317,23 @@ html body {
     width: 300px;
 }
 
-.ecosystem .list {
+.ecosystem .list .list_title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 60px 0 30px;
+}
+.ecosystem .list .list_desc {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+/* .ecosystem .list {
     padding-top: 60px;
 
-}
+} */
 
 .ecosystem .list .list_row {
     display: flex;
@@ -322,6 +343,7 @@ html body {
 .ecosystem .list .list_item {
     flex: 1;
     max-width: 320px;
+    width: 100%;
 }
 
 .ecosystem .list .list_main {
@@ -631,9 +653,11 @@ html body {
     align-items: center;
     justify-content: center;
 }
-.footer .link_icon .other_icon img{
+
+.footer .link_icon .other_icon img {
     max-width: 60px;
 }
+
 .footer .link_icon a img {
     display: block;
 }
