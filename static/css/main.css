@@ -506,10 +506,11 @@ html body {
 
 .tokenomice .main .contact .txt div {
     width: 100%;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: nowrap; */
     max-width: 220px;
+    word-break: break-all;
 }
 
 .tokenomice .main .contact .txt div:last-child {
@@ -780,6 +781,7 @@ html body {
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
+        flex-direction: column;
     }
 
     .tokenomice .main .metrics {
